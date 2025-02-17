@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+### Proyecto Frontend - React y Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de frontend desarrollado con React y Vite. Utiliza Material-UI para los componentes de la interfaz de usuario. A continuación se detallan las instrucciones para instalar y ejecutar el proyecto localmente.
 
-Currently, two official plugins are available:
+## Requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Node.js (preferiblemente la versión 16.x o superior)
+* npm (incluido con Node.js)
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clonar el repositorio**:
 
-- Configure the top-level `parserOptions` property like this:
+    ```bash
+    https://github.com/franciscovalencia2020/n5-frontend.git
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2. **Instalar las dependencias**:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Navega a la carpeta del proyecto y ejecuta el siguiente comando para instalar las dependencias:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+    npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Ejecución
+
+Para ejecutar el proyecto en modo de desarrollo, usa el siguiente comando:
+
+    npm run dev
+
+Esto abrirá la aplicación en http://localhost:3000 o el puerto configurado en tu entorno.
+
+## Uso de Material-UI
+Este proyecto utiliza Material-UI para el diseño de la interfaz de usuario. Asegúrate de que todos los componentes visuales de la aplicación siguen las guías de estilo proporcionadas por Material-UI.
