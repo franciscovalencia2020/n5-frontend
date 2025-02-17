@@ -26,7 +26,7 @@ Para ejecutar el proyecto en modo de desarrollo, usa el siguiente comando:
 
     npm run dev
 
-Esto abrirá la aplicación en http://localhost:3000 o el puerto configurado en tu entorno.
+Esto abrirá la aplicación en http://localhost:5173 o el puerto configurado en tu entorno.
 
 ## Uso de Material-UI
 Este proyecto utiliza Material-UI para el diseño de la interfaz de usuario. Asegúrate de que todos los componentes visuales de la aplicación siguen las guías de estilo proporcionadas por Material-UI.
